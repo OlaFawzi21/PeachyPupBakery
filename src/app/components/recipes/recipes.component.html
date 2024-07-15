@@ -1,0 +1,23 @@
+<section class="recipes h-100 py-5">
+    <div class="container d-flex flex-column align-items-center">
+        <h1 class="mb-5">Recipes</h1>
+        <owl-carousel-o [options]="Options" class="w-100 mb-3">
+            <ng-container *ngIf="mealsData">
+                <ng-template carouselSlide *ngFor="let item of mealsData.meals">
+                    <div class="slider mx-3">
+                        <img class="card-img-top" [src]="item.strMealThumb" alt="photo" />
+                        <div class="details">
+                            <h5>{{ item.strMeal }}</h5>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled
+                            </p>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+        <button class="btn btn-contact p-2">Contact us</button>
+    </div>
+</section>

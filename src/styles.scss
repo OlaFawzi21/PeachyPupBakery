@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --default-color: #333;
+    --primary-color: #fff;
+    --secondary-color: #C98A40;
+    --ternary-color: #584125;
+    --input-color: #FFD39F;
+    --shadow-input: 0 0 0 .25rem rgba(255, 210, 159, 0.4);
+    --btn-color: #FDBA10;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+}
+
+.btn-contact {
+    width: 150px !important;
+    background-color: var(--btn-color) !important;
+    color: var(--primary-color) !important;
+    border-radius: 30px !important;
+    text-transform: uppercase;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}

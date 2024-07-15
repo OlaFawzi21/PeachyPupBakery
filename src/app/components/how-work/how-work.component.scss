@@ -1,0 +1,76 @@
+.how-work {
+    height: auto !important;
+
+    .box-light {
+        background: var(--primary-color) url(../../../assets/work-background.png) no-repeat;
+        background-size: cover;
+
+        p {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 18px;
+            width: 60%;
+        }
+    }
+
+    .box-dark {
+        background-color: var(--secondary-color);
+
+        h1 {
+            font-family: "sen", sans-serif;
+            color: var(--primary-color);
+            font-size: 100px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
+
+    .slider {
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .how-work {
+        .box-dark {
+            h1 {
+                font-size: 80px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .how-work {
+        .box-dark {
+            h1 {
+                font-size: 60px;
+            }
+        }
+
+        .box-light {
+            p {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .how-work {
+        .box-dark {
+            h1 {
+                font-size: 40px;
+            }
+
+            .box-light {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

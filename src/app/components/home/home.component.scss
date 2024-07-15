@@ -1,0 +1,90 @@
+.home {
+    height: 100vh;
+
+    .box-dark {
+        background-color: var(--secondary-color);
+
+        .logo {
+            h4 {
+                color: var(--primary-color);
+            }
+        }
+
+        h1 {
+            font-family: "sen", sans-serif;
+            color: var(--primary-color);
+            font-size: 80px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        p {
+            width: 80%;
+            color: var(--primary-color);
+        }
+
+        .social {
+            background: var(--primary-color) url(../../../assets/hero-background.png);
+            background-size: cover;
+            height: 180px;
+
+            .social-media {
+                top: 25px;
+                right: 10px;
+            }
+        }
+
+        .phone {
+            font-family: "poppins", sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+
+            span {
+                letter-spacing: 3px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            h1 {
+                font-size: 70px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+
+    .box-light {
+        background: var(--primary-color) url(../../../assets/hero-background2.png) no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .pic {
+        width: 45vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(0%, -50%);
+
+        @media (max-width:576px) {
+            display: none;
+        }
+    }
+
+
+}

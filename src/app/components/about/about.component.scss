@@ -1,0 +1,70 @@
+.about {
+    .box {
+        background-color: var(--secondary-color);
+
+        h1 {
+            font-family: "san", sans-serif;
+            font-size: 100px;
+            color: var(--primary-color);
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        p {
+            width: 50%;
+            color: var(--primary-color);
+            font-weight: 600;
+            text-wrap: balance;
+        }
+    }
+
+    .pic-person {
+        width: 35vw;
+        right: 5%;
+        top: 30%;
+        transform: translateY(-30%);
+    }
+}
+
+@media (max-width: 991px) {
+    .about {
+        .box {
+            h1 {
+                font-size: 80px;
+            }
+
+            p {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        .box {
+            h1 {
+                font-size: 60px;
+            }
+        }
+
+        .pic-person {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        .box {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                width: 90%;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,53 @@
+.test {
+    background: var(--secondary-color) url(../../../assets/Testimonials.png) no-repeat;
+    background-size: cover;
+    height: auto !important;
+
+    h1 {
+        font-family: "san", sans-serif;
+        font-size: 100px;
+        color: var(--primary-color);
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .card {
+        background-color: var(--primary-color);
+        border-radius: 20px;
+        padding: 1rem;
+
+        h6 {
+            color: var(--secondary-color);
+        }
+
+        p {
+            color: var(--default-color);
+            font-size: 14px;
+            text-wrap: balance;
+        }
+    }
+
+    @media (max-width: 991px) {
+        h1 {
+            font-size: 80px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        h1 {
+            font-size: 35px;
+        }
+    }
+}

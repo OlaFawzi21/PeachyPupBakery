@@ -1,0 +1,56 @@
+<section class="contact py-5">
+    <div class="container d-flex flex-column align-items-center gap-5">
+
+        <h1>contact us</h1>
+
+        <div class="w-100 d-flex align-items-center flex-lg-row flex-column justify-content-center gap-5">
+            <form  #userData="ngForm" (ngSubmit)="submitData(userData.value)" ngNativeValidate>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control p-3" name="name" ngModel pattern='^[A-Za-z ]+$'
+                        #name="ngModel" placeholder="Full Name" required>
+                    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error-text ms-2">
+                        <small class="text-danger" *ngIf="name.errors?.['required']">Name is required</small>
+                        <small class="text-danger" *ngIf="name.errors?.['pattern']">Please enter a valid name</small>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <input type="email" class="form-control p-3" name="email" ngModel
+                        pattern='^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$' #email="ngModel" placeholder="Email"
+                        required>
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-text ms-2">
+                        <small class="text-danger" *ngIf="email.errors?.['required']">Email is required</small>
+                        <small class="text-danger" *ngIf="email.errors?.['pattern']">Please enter a valid email</small>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <input type="tel" class="form-control p-3" name="phone" ngModel pattern='^01[0-2]\d{8}$'
+                        #phone="ngModel" placeholder="Phone Number" required>
+                    <div *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="error-text ms-2">
+                        <small class="text-danger" *ngIf="phone.errors?.['required']">Phone number is required</small>
+                        <small class="text-danger" *ngIf="phone.errors?.['pattern']">Please enter a valid phone number
+                            (e.g.,
+                            01012345678)</small>
+                    </div>
+                </div>
+
+                <button type="submit" [disabled]="userData.invalid" class="btn btn-primary py-2 mt-3">Send</button>
+            </form>
+
+            <div class="company-data d-flex flex-column gap-3">
+                <a href="mailto:upskilling.eg1@gmail.com">
+                    <img src="assets/mail.svg" alt="mail" class="me-2">
+                    upskilling.eg1@gmail.com
+                </a>
+                <a href="tel:+201154932137">
+                    <img src="assets/call.svg" alt="call" class="me-2">
+                    +20 115 493 2137
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="footer bottom-0"></div>
